@@ -1,11 +1,22 @@
 {
-  "name": "bun-app",
+  "name": "bing-translator",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "bun ./src/index.ts",
+    "build": "bun build --target=node ./src/index.ts --outfile=./dist/index.js"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manit-tree/bing-translator"
+  },
+  "dependencies": {
+    "bing-translate-api": "^4.0.2"
   }
 }
