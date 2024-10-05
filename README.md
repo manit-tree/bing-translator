@@ -1,12 +1,12 @@
 # bing-translator
 
-To install dependencies:
+## install dependencies
 
 ```bash
 bun install
 ```
 
-To Build:
+## Build module
 
 ```bash
 bun run build

@@ -1,10 +1,11 @@
 {
   "name": "bing-translator",
-  "module": "index.ts",
+  "module": "./dist/index.min.js",
   "type": "module",
   "scripts": {
     "dev": "bun ./src/index.ts",
-    "build": "bun build --target=node ./src/index.ts --outfile=./dist/index.js"
+    "build": "bun build --target=node ./src/index.ts --outfile=./dist/index.min.js --minify",
+    "test": "bun ./demo/index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
