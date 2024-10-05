@@ -1,6 +1,6 @@
 {
   "name": "bing-translator",
-  "module": "./dist/index.min.js",
+  "main": "./dist/index.min.js",
   "type": "module",
   "scripts": {
     "dev": "bun ./src/index.ts",
