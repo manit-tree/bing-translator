@@ -118,10 +118,6 @@ out
 # Nuxt.js build / generate output
 
 .nuxt
-<<<<<<< HEAD
-=======
-dist
->>>>>>> 414b8aa990704a2c0fc85344a9636646425f0960
 
 # Gatsby files
 
