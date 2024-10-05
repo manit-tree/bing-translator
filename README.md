@@ -1,5 +1,7 @@
 # bing-translator
 
+Node module for translation from one language to another language using Bing API.
+
 ## install dependencies:
 
 ```bash
