@@ -1,4 +1,4 @@
-import translate from '../dist/index.min.js';
+import translate from '../dist/index.esm.js';
 
 let text = 'How are you ?';
 

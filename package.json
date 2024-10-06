@@ -1,23 +1,25 @@
 {
   "name": "bing-translator",
-  "main": "./dist/index.min.js",
-  "type": "module",
-  "scripts": {
-    "dev": "bun ./src/index.ts",
-    "build": "bun build --target=node ./src/index.ts --outfile=./dist/index.min.js --minify",
-    "test": "bun ./demo/index.ts"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manit-tree/bing-translator"
   },
+  "main": "./dist/index.min.js",
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/manit-tree/bing-translator"
+  "scripts": {
+    "dev": "bun ./src/index.ts",
+    "build-esm": "bun build --target=browser --format=esm ./src/index.ts --outfile=./dist/index.esm.js --minify",
+    "build-iife": "bun build --target=browser --format=iife ./src/index.ts --outfile=./dist/index.iife.js --minify",
+    "build": "bun run build-esm && bun run build-iife",
+    "test": "bun ./demo/index.ts"
   },
+  "type": "module",
   "dependencies": {
-    "bing-translate-api": "^4.0.2"
+    "microsoft-translate-api": "^1.1.0"
   }
 }
